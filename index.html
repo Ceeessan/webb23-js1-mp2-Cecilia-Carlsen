@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rock,Paper,Scissor</title>
+        <script src="JS/script.js" defer></script>
+        <link href="CSS/style.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Edu+NSW+ACT+Foundation:wght@500&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <h1 id="rockPaperScissors">Rock, Paper, Scissors</h1>
+
+        <form>
+            <label for="name" id="writeYourName"> Write your name:</label>
+            <input type="text" name="name" id="typeYourName" />
+            <button id="signIn">Play</button>
+            <h3 id="yourName"></h3>
+        </form>
+
+        <main>
+            <div id="playButtonsDiv">
+                <button id="btn1" move="rock">
+                    <img
+                        src="Bilder/rock-emoji.png"
+                        alt="rock"
+                        id="rock"
+                        move="rock"
+                    />
+                </button>
+                <button id="btn2" move="paper">
+                    <img
+                        src="Bilder/paper-emoji.png"
+                        alt="paper"
+                        id="paper"
+                        move="paper"
+                    />
+                </button>
+                <button id="btn3" move="scissors">
+                    <img
+                        src="Bilder/scissors-emoji.png"
+                        alt="scissors"
+                        id="scissors"
+                        move="scissors"
+                    />
+                </button>
+            </div>
+
+
+            <h3 id="playerVScomputer">Result:</h3>
+
+
+           
+            <div id="finalResult">
+                <h2 id="playerScore">Your Score:</h2>
+                <h2 id="computerScore">Computer Score:</h2>
+                <h2 id="tieScore">Tie:</h2>
+            </div>
+            <div id="whoWillWinDiv">
+                <p id="winnerResult">Who will win?</p>
+                
+                <div id="howManyWins">
+                    <p id="roundsOfWinsForPlayer">Your score:</p>
+                    <p id="roundsOfWinsForComputer">Computer score:</p>
+                </div>
+                <button id="resetGame">Reset Game</button>
+            </div>
+        </main>
+    </body>
+</html>

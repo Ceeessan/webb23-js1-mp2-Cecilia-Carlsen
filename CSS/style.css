@@ -1,0 +1,237 @@
+body {
+    margin: auto;
+    padding: auto;
+    background: rgb(159, 159, 159);
+    background: linear-gradient(
+        0deg,
+        rgb(195, 195, 195) 0%,
+        rgba(255, 255, 255, 1) 92%
+    );
+}
+
+:root {
+    --mySpace: 2px;
+    --myFont: "Bebas Neue";
+    --myColor: rgb(57, 56, 56);
+    --myLightColor: rgb(232, 232, 232);
+}
+
+#rockPaperScissors {
+    display: flex;
+    justify-content: center;
+    font-family: var(--myFont);
+    font-size: 45px;
+    letter-spacing: var(--mySpace);
+    border-bottom: 5px solid rgb(57, 56, 56);
+    color: var(--myLightColor);
+    margin: 0;
+    padding-top: 20px;
+    background: rgb(67, 1, 98);
+    background: linear-gradient(
+        90deg,
+        rgba(67, 1, 98, 1) 0%,
+        rgba(131, 52, 170, 0.8688725490196079) 48%,
+        rgba(67, 1, 98, 1) 100%);
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#writeYourName {
+    color: rgb(57, 56, 56);
+    padding-right: 10px;
+    padding-top: 4px;
+    font-family: var(--myFont);
+    letter-spacing: var(--mySpace);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#typeYourName {
+    padding: 2px;
+    border-style: solid;
+    border-color: rgb(85, 85, 85);
+    border-radius: 5px;
+    margin-right: 8px;
+    font-family: var(--myFont);
+    letter-spacing: var(--mySpace);
+    font-size: 25px;
+}
+
+#signIn {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    font-family: var(--myFont);
+    letter-spacing: var(--mySpace);
+    color: var(--myLightColor);
+    background-color: #8334aa;
+    border-radius: 5px;
+    border: solid;
+    border-color: #8334aa;
+    transition: 0.3s ease;
+}
+
+#signIn:hover {
+    background-color: #9f44cc;
+    border-color: #8539ab;
+    color: var(--myLightColor);
+    font-size: 90%;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+#yourName {
+    position: absolute;
+    text-align: center;
+    margin-top: 60px;
+    font-family: var(--myFont);
+    letter-spacing: var(--mySpace);
+    color: var(--myColor);
+}
+
+#playButtonsDiv {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+#rock {
+    width: 50px;
+    height: 50px;
+    rotate: -90deg;
+}
+#btn1 {
+    margin-right: 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(49, 49, 49);
+    padding: 15px;
+}
+#paper {
+    width: 50px;
+    height: 50px;
+}
+
+#btn2 {
+    margin-right: 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(49, 49, 49);
+    padding: 15px;
+}
+
+#scissors {
+    width: 50px;
+    height: 50px;
+    rotate: -90deg;
+}
+
+#btn3 {
+    margin-right: 20px;
+    border: none;
+    border-radius: 50px;
+    background-color: rgb(49, 49, 49);
+    padding: 15px;
+}
+
+#playerVScomputer {
+    margin-top: 50px;
+    text-align: center;
+    font-family: var(--myFont);
+    letter-spacing: var(--mySpace);
+    color: var(--myColor);
+}
+
+#finalResult {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    
+#whoWillWinDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align:center;
+}
+
+
+#playerScore {
+    font-family: var(--myFont);
+    letter-spacing: var(--mySpace);
+    color: var(--myColor);
+  
+}
+
+#computerScore {
+    font-family: var(--myFont);
+    letter-spacing: var(--mySpace);
+    color: var(--myColor);
+    
+}
+
+#tieScore {
+    font-family: var(--myFont);
+    letter-spacing: var(--mySpace);
+    color: var(--myColor);
+    
+}
+
+#winnerResult {
+   
+    font-family: var(--myFont);
+    font-size: 35px;
+    letter-spacing: var(--mySpace);
+    color: #8334aa;
+    margin-top: 0;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+
+#howManyWins {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    font-family: var(--myFont);
+    font-size: 35px;
+    letter-spacing: var(--mySpace);
+    color: var(--myColor);
+}
+
+#roundsOfWinsForPlayer {
+    font-family: var(--myFont);
+    font-size: 20px;
+    letter-spacing: var(--mySpace);
+    color: var(--myColor);
+    margin-bottom: 0;
+}
+
+#roundsOfWinsForComputer {
+    font-family: var(--myFont);
+    font-size: 20px;
+    letter-spacing: var(--mySpace);
+    color: var(--myColor);
+    margin-top: 0;
+}
+
+#resetGame {
+    margin: auto;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    font-family: var(--myFont);
+    letter-spacing: var(--mySpace);
+    color: var(--myLightColor);
+    background-color: #8334aa;
+    border-radius: 5px;
+    border: solid;
+    border-color: #8334aa;
+    transition: 0.3s ease;
+}
